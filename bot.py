@@ -14,7 +14,7 @@ intents.message_content = True
 intents.guild_messages = True
 intents.members = True
 
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="/", intents=intents)
 
 # Stocker les messages pour chaque ticket
 ticket_messages = {}  # {ticket_id: (message_id, messages_list)}
