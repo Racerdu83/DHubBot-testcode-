@@ -1,7 +1,8 @@
 import discord
+import os
 from discord.ext import commands
 
-TOKEN = "TON_BOT_TOKEN"
+TOKEN = os.getenv("Token")
 CATEGORY_ID = None  # ID de la catégorie des tickets (modifiable via /config)
 CHANNEL_ID = None  # ID du salon de gestion des tickets (modifiable via /config)
 
